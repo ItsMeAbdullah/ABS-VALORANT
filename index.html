@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abdullah Boosting Services</title>
+    <link rel="icon" href="https://freepnglogo.com/images/all_img/1706273134valorant-icon-png.png">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    background-color: #0f1923;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff4655;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4655;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://wallpaperaccess.com/full/3295836.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #ff4655;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 30px;
+    background-color: #ff4655;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d03a48;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff4655;
+}
+#services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0d151e;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;  /* Center the cards */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f2733;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #ff4655;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #bfc7d5;
+}
+
+.pricing-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0f1923;
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff4655;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ff4655;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #1f2733;
+    color: #ff4655;
+}
+
+table td {
+    background-color: #0d151e;
+}
+
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0d151e;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff4655;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ff4655;
+    color: #fff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    header {
+        display: block;  /* Stack elements on smaller screens */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;  /* Vertical layout */
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+        background-color: #ff4655;
+    }
+
+    nav ul li {
+        width: 100%;  /* Make each item take up the full width */
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+        font-size: 20px;
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    table {
+        width: 90%;  /* Make table more mobile-friendly */
+    }
+}
+
+    </style>
+    <header>
+        <div class="logo">Abdullah Boosting Services</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a target="_blank" href="reps.html">Reps/Vouches</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Boost Your Rank in <span>Valorant</span></h1>
+            <p>Fast, Safe, and Professional Boosting Services</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Boosting Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Looking for Boosters</h3>
+                <p>We are actively seeking players who want to level up to 20.</p>
+            </div>
+            <div class="card">
+                <h3>Level Boosting (1-20)</h3>
+                <p>We help you boost your rank from level 1 to 20 in Valorant.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <h2>Our Pricing</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Manual Rank Boosting (1-20)</td>
+                <td>450 PKR</td>
+            </tr>
+            <tr>
+                <td>AFK Rank Boosting (1-20)</td>
+                <td>350 PKR</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <h2>Our Team</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Abdullah Khawaja</td>
+                <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/abdullahkhawaja488/">Facebook</a>/<a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M">Discord</a></td>
+            </tr>
+            <tr>
+                <td>Fahad Qureshi</td>
+                <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/fahadqureshiop">Facebook</a>/<a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M">Discord</a></td>
+
+            </tr>
+            <tr>
+                <td>Wajahat Safeer</td>
+                <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/profile.php?id=61566528363707">Facebook</a>/<a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M">Discord</a></td>
+
+            </tr>
+            <tr>
+                <td>Ayan Khan</td>
+                <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/profile.php?id=100068997040470">Facebook</a>/<a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M">Discord</a></td>
+
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/groups/pakvalorant/posts/1098468168091944/"><p style="font-size: 1.17em;">Facebook</p></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M"><p style="font-size: 1.17em;">Discord</p></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://wa.me/923030810449"><p style="font-size: 1.17em;">Whatsapp</p></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="mailto:abdullahkhawaja488@gmail.com"><p style="font-size: 1.17em;">Mail</p></a>
+        
+        
+    </section>
+
+    <footer>
+        <p>© 2024 Abdullah Boosting Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
