@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 .hero {
     height: 100vh;
-    background: url('fade.jpg') no-repeat center center/cover;
+    background: url('https://media.discordapp.net/attachments/1284500944616161382/1294710266596032667/valorant-fade-hd-wallpaper-uhdpaper.png?ex=670c0066&is=670aaee6&hm=0ca69b5164c2a88a244e6a39ca7d7a59c04d6d2eff1e464dcfb4ab0d99e77742&=&format=webp&quality=lossless&width=550&height=309') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +175,10 @@ table td {
 table td i {
     font-size: 24px;
 }
-
+table td i:hover {
+    opacity: 0.9;
+    transform: scale(0.9);
+}
 #contact {
     padding: 60px 20px;
     text-align: center;
@@ -193,6 +196,15 @@ footer {
     text-align: center;
     background-color: #ff4655;
     color: #fff;
+}
+
+#contact i {
+    font-size: 30px;
+    margin-top: 10px;
+}
+#contact i:hover {
+    opacity: 0.9;
+    transform: scale(0.9);
 }
 
 /* Mobile adjustments */
@@ -232,6 +244,9 @@ footer {
     table {
         width: 90%;  /* Make table more mobile-friendly */
     }
+    .valo {
+        color: #0d151e;
+    }
 }
 
     </style>
@@ -252,7 +267,7 @@ footer {
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Boost Your Rank in <span>Valorant</span></h1>
+            <h1>Boost Your Rank in <span><h1 class="valo">Valorant</h1></span></h1>
             <p>Fast, Safe, and Professional Boosting Services</p>
             <a href="#services" class="btn">Explore Services</a>
         </div>
@@ -282,7 +297,7 @@ footer {
             </tr>
             <tr>
                 <td>Manual Rank Boosting (1-20)</td>
-                <td>450 PKR</td>
+                <td>500 PKR</td>
             </tr>
             <tr>
                 <td>AFK Rank Boosting (1-20)</td>
@@ -322,10 +337,10 @@ footer {
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/abdullahboostingservices"><p style="font-size: 1.17em;">Facebook</p></a>
-        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M"><p style="font-size: 1.17em;">Discord</p></a>
-        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://wa.me/923030810449"><p style="font-size: 1.17em;">Whatsapp</p></a>
-        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="mailto:abdullahkhawaja488@gmail.com"><p style="font-size: 1.17em;">Mail</p></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/abdullahboostingservices"><i class="fab fa-facebook" style="color: #ffffff; margin-left: 5px;"></i><br></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/THVBRAXK4M"><i class="fab fa-discord" style="color: #ffffff; margin-left: 5px;"></i><br></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://wa.me/923030810449"><i class="fab fa-whatsapp" style="color: #ffffff; margin-left: 5px;"></i><br></a>
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="mailto:abdullahkhawaja488@gmail.com"><i class="fas fa-envelope"></i></a>
         
         
     </section>
