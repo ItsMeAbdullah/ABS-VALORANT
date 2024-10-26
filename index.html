@@ -206,6 +206,68 @@ footer {
     opacity: 0.9;
     transform: scale(0.9);
 }
+/* General Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0d151e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0; /* Align dropdown to the right edge of the "More" tab */
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff4655;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    /* Display dropdown as part of the vertical list on mobile */
+    nav ul {
+        padding: 20px 0;
+        background-color: #ff4655;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a, .dropdown .dropbtn {
+        padding: 10px 0;
+        font-size: 20px;
+        display: block;
+    }
+
+    .dropdown-content {
+        position: static; /* Removes absolute positioning for mobile */
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
@@ -248,22 +310,28 @@ footer {
         color: #0d151e;
     }
 }
-
     </style>
-    <header>
-        <div class="logo">Abdullah Boosting Services</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="reps.html">Reps/Vouches</a></li>
-                <li><a href="index.html#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-        </nav>
-    </header>
+   <header>
+    <div class="logo">Abdullah Boosting Services</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="reps.html">Reps/Vouches</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="https://playvalorant.com/en-gb/news/">Updates</a>
+                    <a href="moments.html">Moments</a>
+                    <a href="issues.html">Issues</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <section id="home" class="hero">
         <div class="hero-content">
@@ -272,7 +340,6 @@ footer {
             <a href="#services" class="btn">Explore Services</a>
         </div>
     </section>
-
     <section id="services">
         <h2>Our Boosting Services</h2>
         <div class="service-cards">
@@ -284,10 +351,8 @@ footer {
                 <h3>Level Boosting (1-20)</h3>
                 <p>We help you boost your rank from level 1 to 20 in Valorant.</p>
             </div>
-
         </div>
     </section>
-
     <section id="pricing" class="pricing-section">
         <h2>Our Pricing</h2>
         <table>
@@ -305,7 +370,6 @@ footer {
             </tr>
         </table>
     </section>
-
     <section id="team" class="pricing-section">
         <h2>Our Team</h2>
         <table>
@@ -320,31 +384,24 @@ footer {
             <tr>
                 <td>Fahad Qureshi</td>
                 <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/fahadqureshiop"><i class="fab fa-facebook" style="color: #ffffff;"></i></a><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/s2AB7StmVR"><i class="fab fa-discord" style="color: #ffffff; margin-left: 5px;"></i></a></td>
-
             </tr>
             <tr>
                 <td>Wajahat Safeer</td>
                 <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/profile.php?id=61566528363707"><i class="fab fa-facebook" style="color: #ffffff;"></i></a><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/s2AB7StmVR"><i class="fab fa-discord" style="color: #ffffff; margin-left: 5px;"></i></a></td>
-
             </tr>
             <tr>
                 <td>Ayan Khan</td>
                 <td><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/profile.php?id=100068997040470"><i class="fab fa-facebook" style="color: #ffffff;"></i></a><a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/s2AB7StmVR"><i class="fab fa-discord" style="color: #ffffff; margin-left: 5px;"></i></a></td>
-
             </tr>
         </table>
     </section>
-
     <section id="contact">
         <h2>Contact Us</h2>
         <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://www.facebook.com/abdullahboostingservices"><i class="fab fa-facebook" style="color: #ffffff; margin-left: 5px;"></i><br></a>
         <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://discord.gg/s2AB7StmVR"><i class="fab fa-discord" style="color: #ffffff; margin-left: 5px;"></i><br></a>
         <a target="_blank" style="text-decoration: none; color: #ffffff;" href="https://wa.me/923556074031"><i class="fab fa-whatsapp" style="color: #ffffff; margin-left: 5px;"></i><br></a>
-        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="mailto:abdullahkhawaja488@gmail.com"><i class="fas fa-envelope"></i></a>
-        
-        
+        <a target="_blank" style="text-decoration: none; color: #ffffff;" href="mailto:abdullahkhawaja488@gmail.com"><i class="fas fa-envelope"></i></a>     
     </section>
-
     <footer>
         <p>© 2024 Abdullah Boosting Services. All rights reserved.</p>
     </footer>
