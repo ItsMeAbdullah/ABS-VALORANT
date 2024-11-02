@@ -70,23 +70,26 @@
             gap: 20px;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             padding: 20px;
+            max-width: 900px; /* Limit width on larger screens */
+            margin: auto; /* Center grid */
         }
 
         .video-card {
             background-color: #1f2733;
-            padding: 10px;
             border-radius: 10px;
             color: #bfc7d5;
-            transition: transform 0.3s;
+            overflow: hidden;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
         }
 
-        .video-card:hover {
-            transform: scale(1.05);
-        }
-
-        .video-card video {
+        .video-card iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            border-radius: 10px;
+            height: 100%;
+            border: none;
         }
 
         .video-card h3 {
@@ -146,13 +149,10 @@
     <!-- Video Grid for Moments -->
     <div class="video-grid">
         <div class="video-card">
-            <iframe allow="fullscreen" allowfullscreen height="400" src="https://streamable.com/e/awgitb?" width="700" style="border:none;"></iframe>        </div>
-        <!-- <div class="video-card">
-            <iframe width="700" height="400" src="https://www.youtube.com/embed/m9s1NQG3TNY?si=v4EaJS8WBJ5Soxg5&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <h3>Funny Moment 2</h3>
-        </div> -->
-        <!-- Add more video-card divs as needed -->
+            <iframe src="https://streamable.com/e/awgitb?" allow="fullscreen"></iframe>
+        </div>
+        <!-- Additional video-cards can go here -->
+         
     </div>
 </div>
 
